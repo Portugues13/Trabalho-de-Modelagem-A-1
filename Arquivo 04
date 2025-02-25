@@ -1,0 +1,11 @@
+def metros_para_centimetros(metros):
+    centimetros = metros * 100
+    return centimetros
+
+
+metros = float(input("Digite a distância em metros: "))
+
+centimetros = metros_para_centimetros(metros)
+
+
+print(f"A distância em centímetros é: {centimetros:.2f} cm")
