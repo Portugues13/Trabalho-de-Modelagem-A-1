@@ -1,0 +1,11 @@
+def trocar_valores():
+
+    A = input("Digite o valor de A: ")
+    B = input("Digite o valor de B: ")
+
+    temp = A
+    A = B
+    B = temp
+    print(f"Após a troca: A = {A}, B = {B}")
+
+trocar_valore
