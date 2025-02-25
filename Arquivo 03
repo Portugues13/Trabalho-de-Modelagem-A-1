@@ -1,0 +1,9 @@
+def fahrenheit_para_celsius(fahrenheit):
+    celsius = 5 * ((fahrenheit - 32) / 9)
+    return celsius
+
+f = float(input("Digite a temperatura em graus Fahrenheit: "))
+
+c = fahrenheit_para_celsius(f)
+
+print(f"A temperatura em graus Celsius é: {c:.2f}°C")
