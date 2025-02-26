@@ -1,0 +1,17 @@
+def soma_condicional():
+    try:
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+
+        soma = num1 + num2
+
+        if soma > 20:
+            resultado = soma + 8
+        else:
+            resultado = soma - 5
+
+        print(f"O resultado final é: {resultado}")
+    except ValueError:
+        print("Entrada inválida! Digite apenas números.")
+
+soma_condicional()
