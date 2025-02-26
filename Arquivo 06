@@ -1,0 +1,21 @@
+def emprestimo_biblioteca():
+    nome_usuario = input("Digite seu nome: ")
+    tipo_usuario = input("Digite o tipo de usuário (professor/aluno): ").strip().lower()
+    nome_livro = input("Digite o nome do livro: ")
+
+    if tipo_usuario == "professor":
+        prazo = 10
+    elif tipo_usuario == "aluno":
+        prazo = 3
+    else:
+        print("Tipo de usuário inválido!")
+        return
+
+    print(f"\nConfirmação de Empréstimo:")
+    print(f"Usuário: {nome_usuario}")
+    print(f"Livro: {nome_livro}")
+    print(f"Prazo de devolução: {prazo} dias")
+
+
+# Executa a função
+emprestimo_biblioteca()
