@@ -1,0 +1,18 @@
+def calcular_valor_compra():
+    try:
+        quantidade = int(input("Digite o número de bananas compradas: "))
+
+        if quantidade <= 0:
+            print("Quantidade inválida! Digite um número positivo.")
+            return
+
+        preco_por_banana = 1.00 if quantidade <= 11 else 0.90
+        total = quantidade * preco_por_banana
+
+        print(f"Total da compra: R$ {total:.2f}")
+    except ValueError:
+        print("Entrada inválida! Digite um número inteiro.")
+
+
+# Executa a função
+calcular_valor_compra()
