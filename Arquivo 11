@@ -1,0 +1,9 @@
+def fibonacci():
+    sequencia = [1, 1]
+    for _ in range(8):
+        sequencia.append(sequencia[-1] + sequencia[-2])
+
+    print("Sequência de Fibonacci (10 primeiros números):")
+    print(", ".join(map(str, sequencia)))
+
+fibonacci()
